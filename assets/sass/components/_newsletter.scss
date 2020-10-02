@@ -1,0 +1,75 @@
+.newsletter {
+	margin-bottom: 0;
+	@include respond (mini-tab) {
+		padding-bottom: 2rem;
+	}
+	&__heading {
+		position: relative;
+		z-index: 1;
+		img {
+			width: 3rem;
+			margin-bottom: 1.5rem;
+		}
+		p {
+			margin-bottom: 4rem;
+		}
+	}
+	&__title {
+		color: $pink;
+		font-weight: bold;
+		font-size: 2.5rem;
+		letter-spacing: 1.5px;
+		background-image: linear-gradient(to right, $pink,$brown);
+		-webkit-background-clip: text;
+		color: transparent;
+		margin-bottom: 1.5rem;
+	}
+	&__form {
+		position: relative;
+	}
+	&__input {
+		padding: .5rem 4rem;
+		width: 100%;
+		background: #f7f7f7;
+		border: none;
+		border-radius: 5rem;
+		&:focus {
+			outline: none;
+			border: none;
+		}
+	}
+	&__icon {
+		position: absolute;
+		z-index: 9;
+		top: .5rem;
+		left: 1rem;
+		color: $pink;
+		background-image: linear-gradient(to right, $pink, $clippy-brown-dark);
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+	&__button {
+		position: absolute;
+		transition: .5s all;
+		border: none;
+		right: 0;
+		overflow: hidden;
+		background-image: linear-gradient(to bottom, $pink,$brown);
+		&:hover {
+			transform: translateY(0);
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			background-image: linear-gradient(to bottom, $brown,$pink);
+		}
+		@include respond (mini-phone) {
+			padding: .5rem 1.5rem;
+		}
+	}
+}
+
+
+#mapid {
+	background: none !important;
+	outline: none;
+	box-shadow: 0;
+}

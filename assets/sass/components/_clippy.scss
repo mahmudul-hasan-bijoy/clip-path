@@ -1,0 +1,110 @@
+.clippy-1 {
+	z-index: 1;
+	position: absolute;
+	background-image: linear-gradient(to bottom, $clippy-pink, $clippy-brown);
+	&__header {
+		padding: 0;
+		margin: 0;
+		width: 60vw;
+		height: 80vh;
+		top: 0rem;
+		right: 0;
+		z-index: 0;
+		clip-path: polygon(15% 0, 100% 0, 100% 84%, 28% 63%);
+		@include respond (mini-tab) {
+			display: none;
+		}
+	}
+	&__services {
+		width: 30rem;
+		height: 30rem;
+		clip-path: polygon(0 0, 100% 41%, 78% 93%, 0% 100%);
+		top: 2rem;
+		@include respond (mini-tab) {
+			display: none;
+		}
+	}
+	&__video {
+		width: 24rem;
+		height: 30rem;
+		top: -2rem;
+		right: 0;
+		clip-path: polygon(100% 0, 45% 25%, 100% 100%);
+		@include respond (mini-tab) {
+			display: none;
+		}
+	}
+	&__gallery {
+		width: 24rem;
+		height: 30rem;
+		top: -2rem;
+		left: 0;
+		clip-path: polygon(0 0, 0% 100%, 71% 31%);
+		@include respond (mini-tab) {
+			display: none;
+		}
+	}
+	&__gallery-2 {
+		width: 63rem;
+		height: 40rem;
+		clip-path: polygon(5% 25%, 100% 0, 100% 100%, 19% 79%);
+		top: -2rem;
+		right: 0;
+		@include respond (mini-tab) {
+			display: none;
+		}
+	} 
+}
+.clippy-2 {
+	z-index: 0;
+	position: absolute;
+	background-image: linear-gradient(to right, $clippy-brown-light, $clippy-brown-dark);
+	&__services {
+		width: 30.8rem;
+		height: 30.5rem;
+		clip-path: polygon(0 0, 100% 41%, 78% 93%, 0% 100%);
+		top: 3rem;
+		@include respond (mini-tab) {
+			display: none;
+		}
+	}
+	&__video {
+		z-index: -3;
+		width: 25rem;
+		height: 32rem;
+		right: 0;
+		top: -1rem;
+		clip-path: polygon(100% 0, 45% 25%, 100% 100%);
+		@include respond (mini-tab) {
+			display: none;
+		}
+	}
+	&__gallery {
+		width: 25rem;
+		height: 32rem;
+		top: -1rem;
+		left: 0;
+		clip-path: polygon(0 0, 0% 100%, 71% 31%);
+		@include respond (mini-tab) {
+			display: none;
+		}
+	}
+	&__gallery-2 {
+		width: 64.8rem;
+		height: 40.5rem;
+		right: 0;
+		clip-path: polygon(5% 25%, 100% 0, 100% 100%, 19% 79%);
+		top: 0rem;
+		@include respond (mini-tab) {
+			display: none;
+		}
+	}
+}
+// .clippy-footer {
+// 	position: absolute;
+// 	z-index: 1;
+// 	width: 100%;
+// 	height: 30rem;
+// 	clip-path: polygon(0 40%, 100% 0%, 100% 100%, 0 100%);
+// 	background-image: linear-gradient(to bottom, $clippy-pink, $clippy-brown-dark);
+// }

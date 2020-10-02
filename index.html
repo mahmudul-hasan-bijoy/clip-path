@@ -1,0 +1,439 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+     <!-- Display webpage in edge mode/IE in highest supported document mode -->
+    <meta http-equiv="x-ua-compitable" content="ie=edge, chrome 1">
+    <title>Agency</title>
+    <meta name="description" content="">
+    <!-- Optimizations for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- VENDOR CSS FILES -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <!-- map css -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <!-- map js -->
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <meta name="theme-color" content="#fafafa">
+          <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+              <!--[if lt IE 9]>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"</script>
+              <![endif]-->
+  </head>
+    <body>
+      <!--===========================
+          HEADER
+      ============================-->
+      
+      <header class="header">
+        <!-- custom shapes -->
+        <div class="custom-shape-divider-bottom-1601556831">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div> <!-- custom shapes -->
+        <div class="section clippy-1 clippy-1__header"></div>
+          <nav class="header__nav">
+
+              <img src="assets/img/header_logo.png" alt="Logo" class="img-fluid">
+      
+              <ul class="header__items">
+                <li class="header__lists">
+                  <a href="#" class="header__links">Home</a>
+                </li>
+                <li class="header__lists">
+                  <a href="#" class="header__links">Why Us</a>
+                </li>
+                <li class="header__lists">
+                  <a href="#" class="header__links">Projects</a>
+                </li>
+                <li class="header__lists">
+                  <a href="#" class="header__links">Contact</a>
+                </li>
+                <li class="header__lists">
+                  <a href="#" class="header__links button button__white">Services</a>
+                </li>
+                
+              </ul> <!-- header__items -->
+            <!-- mobile navigation -->
+            <a href="javascript:void(0)" class="navigation" onclick="openNav()">
+              <span class="bar bar__1"></span>
+              <span class="bar bar__2"></span>
+              <span class="bar bar__3"></span>
+            </a>
+            <div id="myNav" class="navigation__overlay">
+                <a href="javascript:void(0)" onclick="closeNav()" class="navigation__close">&times;</a>
+
+                <div class="navigation__overlay-content">
+                  <a href="index.html" onclick="closeNav()" class="navigation__overlay-links bg">Home</a>
+                  <a href="admissions.html" onclick="closeNav()" class="navigation__overlay-links">Why Us</a>
+                  <a href="courses.html" onclick="closeNav()" class="navigation__overlay-links">Projects</a>
+                  <a href="contact.html" onclick="closeNav()" class="navigation__overlay-links">Contact</a>
+                  <a href="#" class="navigation__overlay-links header__links button button__white">Services</a>
+                </div>
+
+              </div> <!-- navigation__overlay -->
+          </nav>
+          <!-- HERO START -->
+          <div class="container">
+            <div class="row">
+              <div class="header__column col-lg-10 offset-lg-1 col-md-12">
+                <div class="grid-2 header__row">
+                    <div class="header__hero">
+                      <h1 class="header__hero-title">The Creative Agency</h1>
+                      <h5 class="header__hero-subtitle">Dhaka, Bangladesh</h5>
+                      <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.Aut eos nisi omnis nemo! Nemo amet veritatis accusamus omnis, eaque a.
+                      </p>
+                      <a href="#" class="button button__regular mt-md">Services</a>
+                    </div>
+                    
+                    <img src="assets/img/herob_person.png" alt="" class="img-fluid header__banner">
+                  <!-- </div> -->
+                </div>
+              </div>
+            </div>
+        </div> <!-- container -->
+        <!-- HERO END -->
+      </header>
+
+      <!--===========================
+          SERVICES
+      ============================-->
+      <section class="section services">
+        <div class="section clippy-1 clippy-1__services"></div>
+        <div class="section clippy-2 clippy-2__services"></div>
+          <div class="container">
+            <div class="section__heading center-text">
+              <div class="col-xl-6 col-md-6 offset-xl-3 offset-md-3">
+                <h2 class="section__title mb-sm">Services</h2>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate voluptatum facilis suscipit! Assumenda sunt</p>
+              </div>
+            </div> <!-- section__heading -->
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1 col-md-12">
+                <div class="grid-text-3 mt-big">
+                  <div class="cards cards__services center-text">
+                    <img src="assets/img/services_icon-1.png" class="cards__icon img-fluid">
+                    <h3 class="cards__title">Secure Privacy</h3>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, possimus accusamus placeat architecto asperiores modi culpa expedita nobis iusto delectus.
+                    </p>
+                    <a href="#" class="button button__regular">Learn More</a>
+                  </div> <!-- cards -->
+                  <div class="cards cards__services center-text">
+                    <img src="assets/img/services_icon-2.png" class="cards__icon img-fluid">
+                    <h3 class="cards__title">Fingureprint lock</h3>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, possimus accusamus placeat architecto asperiores modi culpa expedita nobis iusto delectus.
+                    </p>
+                    <a href="#" class="button button__regular">Learn More</a>
+                  </div> <!-- cards -->
+                  <div class="cards cards__services center-text">
+                    <img src="assets/img/services_icon-3.png" class="cards__icon img-fluid">
+                    <h3 class="cards__title">Smart control</h3>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, possimus accusamus placeat architecto asperiores modi culpa expedita nobis iusto delectus.
+                    </p>
+                    <a href="#" class="button button__regular">Learn More</a>
+                  </div> <!-- cards -->
+                </div> <!-- grid-3 -->
+              </div> <!-- column -->
+            </div> <!-- row -->
+
+          </div>
+      </section>
+
+      <!--===========================
+          VIDEO
+      ============================-->
+      <section class="section content">
+        <div class="section clippy-1 clippy-1__video"></div>
+        <div class="section clippy-2 clippy-2__video"></div>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1 col-md-12">
+                <div class="grid-2">
+                  <div class="content__left">
+                      <div class="content__img">
+                        <div class="cards__backlay"></div>
+                        <img src="assets/img/video.png" alt="Video" class="cards cards__img img-fluid">
+                        <a href="#" class="content__icon"><i class="fas fa-play"></i></a>
+                        <div class="cards__overlay"></div>
+                      </div>
+                  </div>
+                  <div class="content__right">
+                    <h2 class="section__title mb-sm">Agency for urban people</h2>
+                    <p class="paragraph mb-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a ducimus blanditiis eligendiquidem nemo itaque placeat quae eius tempore. quidem nemo itaque placeat quae eius tempore.
+                    </p>
+                    <p class="paragraph mb-md">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Sapiente, debitis quidem nemo itaque placeat quae eius tempore.!
+                    </p>
+                    <a href="#" class="button button__regular">Learn More</a>
+                  </div>
+                </div> <!-- grid -->
+            </div> <!-- column -->
+          </div> <!-- row -->
+        </div> <!-- container -->
+      </section>
+
+      <!--===========================
+          ABOUT US
+      ============================-->
+      <section class="section about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+              <div class="grid-text-3 text-center">
+                
+                <div class="about__column">
+                  <img src="assets/img/whyus-1.png" class="cards__icon img-fluid">
+                    <h3 class="cards__title">Insurance Include</h3>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, possimus accusamus placeat architecto asperiores modi culpa expedita nobis iusto delectus.
+                    </p>
+                </div>
+                <div class="about__column">
+                  <img src="assets/img/whyus-2.png" class="cards__icon img-fluid">
+                    <h3 class="cards__title">Easy To Use</h3>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, possimus accusamus placeat architecto asperiores modi culpa expedita nobis iusto delectus.
+                    </p>
+                </div>
+                <div class="about__column">
+                  <img src="assets/img/whyus-3.png" class="cards__icon img-fluid">
+                    <h3 class="cards__title">Responsive alarm</h3>
+                    <p class="paragraph">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, possimus accusamus placeat architecto asperiores modi culpa expedita nobis iusto delectus.
+                    </p>
+                </div>
+
+              </div> <!-- grid-text-3 -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===========================
+          GALLERY
+      ============================-->
+      <section class="section gallery">
+        <div class="section clippy-1 clippy-1__gallery"></div>
+        <div class="section clippy-2 clippy-2__gallery"></div>
+        <div class="section clippy-1 clippy-1__gallery-2"></div>
+        <div class="section clippy-2 clippy-2__gallery-2"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+              
+              <div class="grid-gallery gallery__content">
+                
+                <div class="gallery__left">
+                  <h2 class="section__title mb-sm">Utilizing Rural Employment</h2>
+                  <p class="paragraph mb-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae a ducimus blanditiis eligendiquidem nemo itaque placeat quae eius tempore. quidem nemo itaque placeat quae eius tempore.
+                  </p>
+                  <a href="#" class="button button__regular">Learn More</a>
+                </div> <!-- galllery__left -->
+                <div class="gallery__right">
+
+                    <img src="assets/img/person-1.png" alt="Gallery" class="cards cards__img img-fluid">
+
+                    <img src="assets/img/person-2.png" alt="Gallery" class="cards cards__img img-fluid">
+        
+                    <img src="assets/img/person-3.png" alt="Gallery" class="cards cards__img img-fluid">
+              
+                </div> <!-- gallery__right -->
+
+              </div> <!-- grid-2 -->
+
+            </div> <!-- column -->
+          </div> <!-- row -->
+        </div> <!-- container -->
+      </section>
+
+      <!--===========================
+          CONTACT
+      ============================-->
+      <section class="section contact">
+        <div class="section clippy-1 clippy-1__video"></div>
+        <div class="section clippy-2 clippy-2__video"></div>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1 col-md-12">
+                <div class="grid-2">
+                  <div class="content__left">
+                      <div class="content__img">
+                        <div class="cards__backlay"></div>
+                        <!-- <img src="assets/img/map.png" alt="Video" class="cards cards__img img-fluid"> -->
+                        <div id="mapid" style="background: none; box-shadow: none;">
+                        <iframe class="cards cards__img" width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=90.41945725679399%2C23.76521479683275%2C90.42245060205462%2C23.766685195608076&amp;layer=mapnik"></iframe>
+                        </div>
+                        <div class="cards__overlay"></div>
+                      </div>
+                  </div>
+                  <div class="content__right">
+                    <h2 class="section__title mb-sm">Contact</h2>
+                    <p class="paragraph mb-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit quidem nemo itaque placeat quae eius tempore.
+                    </p>
+                    <small class="contact__lists"><i class="fas fa-phone-alt"></i>(+123) 8888555</small>
+                    <small class="contact__lists"><i class="far fa-clock"></i>09.00 AM - 19.00 PM</small>
+                    <small class="contact__lists"><i class="fas fa-map-marker-alt"></i>Dhaka, Bangladesh</small>
+                    <small class="contact__lists"><i class="far fa-envelope"></i>bijoyhasan111@gmail.com</small>
+
+                  </div>
+                </div> <!-- grid -->
+            </div> <!-- column -->
+          </div> <!-- row -->
+        </div> <!-- container -->
+      </section>
+
+      <!--===========================
+          NEWSLETTER
+      ============================-->
+      <section class="section newsletter">
+        <div class="section clippy-1 clippy-1__services"></div>
+        <div class="section clippy-2 clippy-2__services"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12">
+              <div class="newsletter__heading text-center">
+                <img src="assets/img/newsletter_envelop.png" alt="" class="img-fluid">
+                <h2 class="newsletter__title">Stay updated</h2>
+                <p class="paragraph">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Necessitatibus autem rem eligendi reiciendis cumque et?
+                </p>
+                <form action="#" class="newsletter__form">
+                    <span class="newsletter__icon"><i class="fas fa-envelope"></i></span>
+                    <input type="text" placeholder="Your Email" required="required" class="newsletter__input" >
+                    <input type="submit" value="Subscribe" class="button button__regular newsletter__button">
+                </form>
+              </div>
+            </div> <!-- column -->
+          </div> <!-- row -->
+        </div> <!-- container -->
+      </section>
+
+      <!--===========================
+          FOOTER & COUNTER
+      ============================-->
+      <section class="number">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+
+              <div class="footer__counter grid-counter">
+                <div class="footer__counter-box">
+                  <h2 class="footer__counter-number"><span class="counter">1000</span>+</h2>
+                  <p class="paragraph footer__counter-content">
+                    happy clients
+                  </p>
+                </div> <!-- footer__counter-box -->
+                <div class="footer__counter-box">
+                  <h2 class="footer__counter-number counter">156</h2>
+                  <p class="paragraph footer__counter-content">
+                    active projects
+                  </p>
+                </div> <!-- footer__counter-box -->
+                <div class="footer__counter-box">
+                  <h2 class="footer__counter-number"><span class="counter">80</span>+</h2>
+                  <p class="paragraph footer__counter-content">
+                    customers
+                  </p>
+                </div> <!-- footer__counter-box -->
+                <div class="footer__counter-box">
+                  <h2 class="footer__counter-number counter">1482</h2>
+                  <p class="paragraph footer__counter-content">
+                    finished projects
+                  </p>
+                </div> <!-- footer__counter-box -->
+              </div> <!-- footer__counter -->
+
+            </div> <!-- column -->
+          </div> <!-- row -->
+        </div> <!-- container -->
+      </section> <!-- counter -->
+      
+      <!-- MAIN FOOOTER START-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12 footer__column">
+
+              <div class="footer__main grid-2">
+                <div class="footer__left">
+                  <img src="assets/img/header_logo.png" alt="Footer Logo" class="img-fluid">
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eius, cum nisi unde illo earum?
+                  </p>
+                  <div class="footer__social-icon">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                  </div>
+                </div> <!-- footer__left -->
+                <div class="footer__right">
+                  <form action="#" class="newsletter__form">
+                    <span class="newsletter__icon"><i class="fas fa-envelope"></i></span>
+                    <input type="text" placeholder="Your Email" required="required" class="newsletter__input" >
+                    <input type="submit" value="Subscribe" class="button button__regular newsletter__button">
+                  </form>
+                  <small class="contact__lists"><i class="fas fa-phone-alt"></i>(+123) 8888555</small>
+                  <small class="contact__lists"><i class="far fa-clock"></i>09.00 AM - 19.00 PM</small>
+                  <small class="contact__lists"><i class="fas fa-map-marker-alt"></i>Dhaka, Bangladesh</small>
+                  <small class="contact__lists"><i class="far fa-envelope"></i>bijoyhasan111@gmail.com</small>
+                </div> <!-- footer__right -->
+              </div> <!-- grid-2 -->
+              <p class="footer__copyright center-text">
+                2020 &copy; <a class="footer__link" href="https://github.com/mahmudul-hasan-bijoy">Mahmudul Hasan Bijoy</a> | Design collected from <a class="footer__link" href="https://behance.com">Behance</a>
+              </p>
+
+            </div> <!-- column -->
+          </div> <!-- row -->
+        </div> <!-- container -->
+      </footer>
+
+      <!-- test -->
+      <!-- <section class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+              <div id="mapid" style="height: 18rem">
+                <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=90.41945725679399%2C23.76521479683275%2C90.42245060205462%2C23.766685195608076&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/23.76595/90.42095">View Larger Map</a></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- jQuery & Custom javaScript -->
+      <script src="assets/js/modernizr-3.8.0.min.js"></script>
+      <script src="assets/js/jquery-3.5.1.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+      <script src="assets/js/main.js"></script>
+      
+    </body>
+  </html>

@@ -1,0 +1,97 @@
+/*
+0px - 600px:	Phone
+600px - 900px:	Tablet portrait
+900px - 1200px:	Tablet landscape
+[1200-1800px] is where our normal style apply
+1800px + : Big Desktop
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+ORDER: Base + Typography > Layout + Grid > Page Layout > Components;
+
+1em = 16px;
+*/
+*, html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: $offwhite;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.6rem;
+  @include respond(big-desktop) {
+    font-size: 1.8rem;
+  }
+  @include respond(tab-land) {
+    font-size: 1.5rem;
+  }
+  @include respond(tab-port) {
+    font-size: 1.4rem;
+  }
+  @include respond(phone) {
+    font-size: 1.2rem;
+  }
+  color: $black;
+  box-sizing: border-box;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; 
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+}
+
+a,
+a:hover {
+  transition: .3s all;
+  text-decoration: none;
+}
+.paragraph {
+  font-size: 1.4rem;
+  color: $grey;
+  line-height: 2.4rem;
+}  
+
+.section {
+  position: relative;
+  margin: 5rem 0;
+  //FOR THIS PROJECT
+  @include respond (tab-port) {
+    margin: 0 0;
+  }
+  padding: 5rem 0;
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+}
+
+::selection {
+  background-color: $white;
+  color: $black; }

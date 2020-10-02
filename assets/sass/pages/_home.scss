@@ -1,0 +1,142 @@
+//SERVICE START
+.services {
+	padding: 0;
+	margin-top: 15rem;
+	@include respond (mini-tab) {
+		margin-top: 10rem;
+	}
+}
+//SERVICE END
+.about__column {
+	transition: .3s all;
+	&:hover .cards__icon {
+		transform: translateY(-5px);
+	}
+}
+
+//CONTENT START
+.content {
+	&__left {
+		max-width: 40rem;
+		@include respond (mini-tab) {
+			max-width: 100%;
+		}
+	}
+	&__right {
+		position: relative;
+		z-index: 1;
+	}
+	&__img {
+		position: relative;
+
+		&:hover .cards__backlay{
+			transform: translateY(-1rem);
+		}
+		&:hover .cards__img,
+		&:hover .cards__overlay{
+			transform: translateY(1rem);
+		}
+	}
+	&__icon {
+		position: absolute;
+		z-index: 10;
+		color: $pink;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background: rgba(255, 255, 255, 0.71);
+		width: 5rem;
+		height: 5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		&:hover {
+			color: $clippy-pink;
+		}
+	}
+}
+//CONTENT END
+
+
+//GALLERY START
+.gallery {
+	&__content {
+		margin-top: 8rem;
+		@include respond (tab-land) {
+			margin-top: 0;
+		}
+	}
+	&__left {
+		max-width: 30rem;
+		@include respond (tab-land) {
+			max-width: 100%;
+		}
+		position: relative;
+		z-index: 1;
+	}
+	&__right {
+		display: flex;
+		align-items: stretch;
+		justify-content: center;
+		@include respond (phone) {
+			flex-direction: column;
+			align-items: center;
+			margin: 0 2rem;
+		}
+		img {
+			cursor: pointer;
+			width: 23rem;
+			transition: 0.3s all;
+			&:not(:first-child) {
+				margin-left: 2rem;
+				@include respond (phone) {
+					margin-left: 0;
+				}
+			}
+			&:hover {
+				transform: translateY(-0.2rem);
+			}
+			@include respond (tab-port) {
+				width: 18rem;
+			}
+			@include respond (mini-tab) {
+				width: 15rem;
+			}
+			@include respond (phone) {
+				width: 100%;
+				height: 25rem;
+				margin-top: 2rem;
+				border-radius: 0;
+			}
+		}
+	}
+}
+//GALLERY END
+
+
+//CONTACT START
+.contact {
+	margin-top: 15rem;
+	@include respond (tab-land) {
+		margin-top: 5rem;
+	}
+	&__lists {
+		display: block;
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+		i {
+			color: $clippy-pink;
+			margin-right: 1rem;
+		}
+	}
+	.content__left {
+		.content__img {
+			.cards__overlay {
+				opacity: 0.1;
+			}
+		}
+	}
+}
+//CONTACT END

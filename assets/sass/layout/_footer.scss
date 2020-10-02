@@ -1,0 +1,101 @@
+.footer {
+	color: $white;
+	padding-top: 14rem;
+	padding-bottom: 2rem;
+	background-image: linear-gradient(to top, $clippy-pink, $clippy-brown);
+	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+
+	&__counter {
+		position: relative;
+		color: $white;
+		position: relative;
+		z-index: 1;
+		padding: 2rem 0;
+		bottom: -8rem;
+		background-image: linear-gradient(to top, $clippy-pink, $clippy-brown);
+		box-shadow: -10px 10px 0px 0px rgba(0,0,0,0.03);
+		transition: .3s all;
+		&:hover {
+			transform: translateY(.5rem);
+		}
+
+		&-number {
+			font-weight: bold;
+			font-size: 3rem;
+			@include respond (phone) {
+				font-size: 2rem !important;
+			}
+		}
+		&-content {
+			color: $white;
+			text-transform: capitalize;
+		}
+	}
+	&__main {
+		margin-bottom: 2rem;
+	}
+	&__left {
+		max-width: 25rem;
+		@include respond (mini-tab) {
+			max-width: 100%;
+		}
+		img {
+			margin-bottom: 1rem;
+		}
+		p {
+			color: $white;
+		}
+	}
+	&__social-icon {
+		margin-top: 2rem;
+		a {
+			color: $white;
+			&:not(:first-child) {
+				margin-left: 1rem;
+			}
+			i {
+				&:hover {
+					transform: scale(.90);
+				}
+			}
+		}
+	}
+	&__right {
+		max-width: 25rem;
+		@include respond (mini-tab) {
+			max-width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		form {
+			margin-bottom: 1rem;
+			@include respond (mini-tab) {
+				display: flex;
+				justify-content: center;
+				max-width: 35rem;
+			}
+		}
+		.contact__lists {
+			margin-left: 9rem;
+			@include respond (mini-tab) {
+				margin-left: 0;
+			}
+		}
+		.newsletter__button {
+			padding: .5rem 1rem;
+		}
+		small {
+			i {
+				color: $white;
+			}
+		}
+	}
+	&__link {
+		color: $white;
+		&:hover {
+			color: currentColor;
+			text-decoration: underline;
+		}
+	}
+}

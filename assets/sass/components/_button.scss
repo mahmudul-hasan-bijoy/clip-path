@@ -1,0 +1,20 @@
+.button {
+	display: inline-block;
+	padding: .5rem 4rem;
+	border-radius: 5rem;
+	&__white {
+		color: $pink !important;
+		background: $white !important;
+	}
+	&:hover {
+		color: $pink;
+		transform: scale(0.95);
+	}
+	&__regular {
+		color: $white;
+		background-image: linear-gradient(to right, $pink,$brown);
+		&:hover {
+			color: $white;
+		}
+	}
+}
